@@ -172,6 +172,9 @@
     width: auto;
     text-align: center;
 }
+.pie-de-pagina .contactanos .coder{
+    color: white;
+  }
 @media(max-width:920px){
     .pie-de-pagina{
         grid-template-columns: repeat(2, 1fr);
