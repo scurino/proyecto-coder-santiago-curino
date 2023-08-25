@@ -7,6 +7,11 @@
   font-family: "Open Sans", sans-serif;
 }
 
+/*BODY*/
+body {
+  background-color: rgb(236, 242, 248);
+}
+
 /*background-color: rgb(236,242,248);*/
 /*navegador*/
 .navegador {
@@ -63,6 +68,7 @@
     align-items: center;
     padding-top: 50px;
     transition: 0, 5s;
+    z-index: 2;
   }
   .navegador ul:hover {
     left: 0;
@@ -125,13 +131,18 @@
   display: flex;
   flex-wrap: wrap;
   margin: 5px 15px 80px 15px;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: center;
+  gap: 50px;
 }
 
 /*portada*/
 .slide {
   margin: 15px 0 15px 0;
+}
+@media (max-width: 768px) {
+  .slide {
+    z-index: 1;
+  }
 }
 
 .slide img {
