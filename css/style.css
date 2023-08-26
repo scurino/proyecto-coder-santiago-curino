@@ -140,6 +140,10 @@ body {
   margin: 5px 15px 80px 15px;
   justify-content: center;
   gap: 50px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.tiposdeservicios:hover {
+  text-shadow: 0px 15px rgba(0, 0, 0, 0.5);
 }
 
 /*portada*/
