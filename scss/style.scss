@@ -116,20 +116,36 @@ body{
 </div>
 */
 /*filtros*/
+.orden-publicar {
+    width: 30%;
+    margin: 0 auto;
+    padding: 0 20px; 
+    @media(max-width: 1360px){
+        width:50%;
+        
+    }    
+}   
+
 .tiposdeservicios{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 40px;
     div{
         display: inline-block;
-        margin: 5px 15px 80px 15px;
+        margin: 5px 10px 40px 10px;
         font-size: 70px;
-        transition: text-shadow 0.3 ease;
+        transition: text-shadow 0.3s ease, color 0,3s ease;
         &:hover{
             text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
             color: rgb(95, 94, 94);
         }
     }
+}
+.publicar{
+    text-align: center;
+    font-size: 60px;
+    margin: 50px;
 }
 
 /*portada*/
