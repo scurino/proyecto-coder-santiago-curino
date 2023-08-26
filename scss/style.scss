@@ -117,16 +117,18 @@ body{
 */
 /*filtros*/
 .tiposdeservicios{
-    font-size: 70px;
-    text-align: center;
     display: flex;
-    flex-wrap: wrap ;
-    margin: 5px 15px 80px 15px;
     justify-content: center;
     gap: 50px;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    &:hover{
-        text-shadow:  0px 15px rgba(0, 0, 0, 0.5);
+    div{
+        display: inline-block;
+        margin: 5px 15px 80px 15px;
+        font-size: 70px;
+        transition: text-shadow 0.3 ease;
+        &:hover{
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            color: rgb(95, 94, 94);
+        }
     }
 }
 
