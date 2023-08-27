@@ -318,7 +318,91 @@ body {
     grid-row: 3;
   }
 }
-/*CORTES*/
+/*CHAT*/
+/*INICIO DE SESION*/
+.maIn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.maIn form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: #eeeeee;
+}
+.maIn form h2 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #2e2e2e;
+  margin-bottom: 25px;
+}
+.maIn form label {
+  font-size: 17px;
+  color: #575757;
+  margin-bottom: 10px;
+}
+.maIn form input {
+  padding: 17px;
+  border: 1px solid #cad3dc;
+  margin-bottom: 25px;
+  background-color: #fafafc;
+  outline: none;
+  color: #0077ff;
+  font-size: 17px;
+}
+.maIn form .btn-1 {
+  background-color: #0077ff;
+  font-size: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.maIn form .btn-1:hover {
+  background-color: #0077ff;
+}
+.maIn form .remember {
+  font-size: 17px;
+  color: #575757;
+  text-decoration: underline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.maIn form .remember:hover {
+  color: #0077ff;
+}
+
+@media (max-width: 440px) {
+  .maIn {
+    padding: 30px;
+  }
+  .maIn form {
+    width: 100%;
+  }
+}
+.background {
+  background-image: linear-gradient(135deg, #00b7d4, #505488, #2f3f80, #161569, #5a4894, #a950a1, #ff7cae);
+  background-size: 500%;
+  animation: fanimado 10s infinite;
+}
+
+@keyframes fanimado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
 /*INICIO-SESION*/
 /*
     grid-column:

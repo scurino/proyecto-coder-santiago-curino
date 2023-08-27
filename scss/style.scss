@@ -175,7 +175,6 @@ body{
         }
     }
 }
-
 .publicar{
     text-align: center;
     font-size: 60px;
@@ -184,7 +183,6 @@ body{
         font-size: 45px;
     }
 }
-
 /*portada*/
 .slide{
     margin: 15px 0 15px 0;
@@ -199,7 +197,6 @@ body{
 .destacados{
     margin-left: 17px;
 }
-
 /*portada y cartas*/
 .orden-tarjetas{
     display: flex;
@@ -221,7 +218,6 @@ body{
     &:hover{
         box-shadow: 0px 0px 10px 7px rgba(158, 156, 156, 0.954);
     }
-
 }
 .imagen-tarjeta{
     width: 195px;
@@ -275,9 +271,91 @@ body{
         grid-row: 3;
     }
 }
+/*CHAT*/
 
-/*CORTES*/
-
+/*INICIO DE SESION*/
+.maIn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    form{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        background-color: #eeeeee;
+        h2{
+            text-align: center;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #2e2e2e;
+            margin-bottom: 25px;
+        }
+        label{
+            font-size: 17px;
+            color: #575757;
+            margin-bottom: 10px;
+        }
+        input{
+            padding: 17px;
+            border: 1px solid #cad3dc;
+            margin-bottom: 25px;
+            background-color: #fafafc;
+            outline: none;
+            color: #0077ff;
+            font-size: 17px;
+        }
+        .btn-1{
+            background-color: #0077ff;
+            font-size: 15px;
+            color: #ffffff;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover{
+                background-color: #0077ff;
+            }
+        }
+        .remember{
+            font-size: 17px;
+            color: #575757;
+            text-decoration: underline;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            &:hover{
+                color: #0077ff;
+            }
+            
+        }
+    }
+}
+@media(max-width:440px){
+    .maIn{
+        padding: 30px;
+        form{
+            width: 100%;
+        }
+    }
+}
+.background{
+    background-image: linear-gradient(135deg,#00b7d4, #505488, #2f3f80, #161569, #5a4894, #a950a1, #ff7cae);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+}
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
 /*INICIO-SESION*/
 /*
     grid-column:
